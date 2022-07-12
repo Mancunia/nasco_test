@@ -1,4 +1,8 @@
+const fs = require('fs');
+const path = require('path');
 
+
+const file = "../nasco_employees.txt";
 
 const toJson = (data)=>{
     const processedData =[];
@@ -18,10 +22,44 @@ const toJson = (data)=>{
      return processedData;
     }
 
+
+    const readFile = async ()=>{
+        let splitted;
+        // console.log(__dirname);
+        try {
+            let data = fs.readFileSync(path.join(__dirname,file), 'utf8');
+
+            
+                splitted = await data.toString().split("\n");
+                // splitted.pop();
+                            
+             
+            return await splitted;
+        } catch (error) {
+            throw error.message;
+        }
+    }
+
+    const writeFile=async(data)=>{
+        try {
+            fs.writeFile(path.join(__dirname,file), data.join("\n"),(err)=>{
+                throw "Writing File";
+            });
+
+            return true;
+
+        } catch (error) {
+            console.log(error);
+            throw error
+        }
+    }
+
    
 
 
 
 module.exports={
-    toJson
+    toJson,
+    readFile,
+    writeFile
 }

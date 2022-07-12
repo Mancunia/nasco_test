@@ -1,14 +1,23 @@
-const fs = require('fs');
-const path = require('path');
-const {toJson} = require("./utils");
+const express = require('express');//express
+const port = process.env.PORT||5500;
 
-let splitted;
-fs.readFile(path.join(__dirname, 'nasco_employees.txt'), 'utf8', async function(err, data) {
-    if(err) throw err;
-    splitted = await data.toString().split("\n");
-    splitted.pop();
-    console.log(toJson(splitted));
- })
+const app = express();
 
-    
- 
+// uses (middleware)
+app.use(express.urlencoded({extended:true}));
+app.use(express.json());
+
+const routes = require('./route')
+
+
+
+    app.listen(port,()=>{
+        console.log(`Connection established on port ${port} `);
+        // console.log(process.env.HOST);
+    })
+
+    app.use('/',routes);
+
+    app.use('',(req,res)=>{
+    res.status(404).send("notFound");
+    });

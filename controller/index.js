@@ -32,6 +32,15 @@ const {toJson,readFile,writeFile} = require("../utils");
 
 
  const newRecord = async(req,res)=>{
+   /*
+   0.get body from req
+   1. concat to body to string
+   2. format to js object
+   3. check for duplicates
+      3.1. if no, step 4
+   4. push to array
+   5. write to file
+   */ 
    try {
       let data =await readFile();
     if(!data){
@@ -44,14 +53,15 @@ const {toJson,readFile,writeFile} = require("../utils");
 
     let dataJson= toJson(data);
 
-   //  console.log(dataJson.filter(record=>record.phone ==phone||record.email==email)?record:null);
+             console.log(dataJson.find(record=>record.phone ==phone||record.email==email)?record:null);
 
-   // dataJson.forEach(record=>console.log(record));
+            // dataJson.forEach(record=>console.log(record));
 
-   //  if(dataJson.filter(record=>record.phone ==phone))
-   //  {
-   //    throw {status:403,message:"Email or Phone number exist's already"}
-   // }
+             if(dataJson.find(record=>record.phone ==phone||record.email==email))
+             {
+               throw {status:403,message:"Email or Phone number exist's already"}
+            }
+
     data.push(record);
 
     let response = await writeFile(data);

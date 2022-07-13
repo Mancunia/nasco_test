@@ -28,3 +28,8 @@
 28,Colby,Lincoln,"426 Bryan Street",336-284-1978,ColbyVLincoln@superrito.com,4/8/1996
 29,Robert,Retzlaff,"1858 Water Street",925-250-0317,RobertKRetzlaff@superrito.com,6/20/1951
 30,Donald,Schmidt,"1925 Mattson Street",503-431-9711,DonaldBSchmidt@rhyta.com,11/27/1952
+31,Mama,Patricia,23456,0255615538,mompat@gmail.com,27/11/19994
+32,Emmanuel,Lutterodt,P. O. Box 140,+233245243172,mancunaimoe@gmail.com,11/27/1952
+33,Emmanuel,Lutterodt,P. O. Box 140,+233245243172,emmanuel@gmail.com,11/27/1952
+34,George,Lutterodt,Pokuah Street,+233245243172,kojo@gmail.com,2022-07-09
+35,Osei,Lutterodt,Plot 13 Blk ix,+233245243172,osei@gmail.com,2022-07-09

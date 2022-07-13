@@ -1,8 +1,9 @@
 const fs = require('fs');
 const path = require('path');
+require('dotenv').config();
 
 
-const file = "../nasco_employees.txt";
+const file = process.env.TEXT_DB;
 
 const toJson = (data)=>{
     const processedData =[];
@@ -19,6 +20,8 @@ const toJson = (data)=>{
             data_of_birth:record[6]
         })
     })
+    
+
      return processedData;
     }
 
@@ -32,6 +35,8 @@ const toJson = (data)=>{
             
                 splitted = await data.toString().split("\n");
                 // splitted.pop();
+
+                splitted.filter(record=>record!=undefined)
                             
              
             return await splitted;
@@ -43,14 +48,17 @@ const toJson = (data)=>{
     const writeFile=async(data)=>{
         try {
             fs.writeFile(path.join(__dirname,file), data.join("\n"),(err)=>{
-                throw "Writing File";
+                if(err){throw "Writing File"}
+
+                
+               
             });
 
             return true;
 
         } catch (error) {
             console.log(error);
-            throw error
+            throw error.message
         }
     }
 

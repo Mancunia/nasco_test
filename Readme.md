@@ -16,6 +16,10 @@ method:POST
     email,
     date_of_birth
 }
+
+## CORS settings
+
+locate ./config.js and configure the allowed routes
 ## Dependencies
 -[x]Express
 

@@ -40,13 +40,18 @@ const {toJson,readFile,writeFile} = require("../utils");
 
     let {firstName,lastName,address,phone,email,date_of_birth} = req.body;
 
-    let record = `${data.length++},${firstName},${lastName},${address},${phone},${email},${date_of_birth}`;
+    let record = `${data.length+1},${firstName},${lastName},${address},${phone},${email},${date_of_birth}`;
 
-    if(data.filter(record=>{
-      return record.includes(phone)||record.includes(email);
-   })){
-      throw {status:403,message:"Email or Phone number exist's already"}
-   }
+    let dataJson= toJson(data);
+
+   //  console.log(dataJson.filter(record=>record.phone ==phone||record.email==email)?record:null);
+
+   // dataJson.forEach(record=>console.log(record));
+
+   //  if(dataJson.filter(record=>record.phone ==phone))
+   //  {
+   //    throw {status:403,message:"Email or Phone number exist's already"}
+   // }
     data.push(record);
 
     let response = await writeFile(data);

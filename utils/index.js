@@ -3,7 +3,7 @@ const path = require('path');
 require('dotenv').config();
 
 
-const file = process.env.TEXT_DB;
+const file = process.env.TEXT_DB||'../nasco_employees.txt';
 
 const toJson = (data)=>{
     const processedData =[];

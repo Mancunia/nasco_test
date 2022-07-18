@@ -1,4 +1,4 @@
-1,Della,Cox,"4945 Lucky Duck Drive",412-862-8457,DellaDCox@superrito.com,10/12/1985
+1,undefined,undefined,undefined,undefined,undefined,undefined
 2,Walter,Jeske,"495 Rafe Lane",662-729-8758,WalterJJeske@armyspy.com,3/15/1951
 3,Ron,Plaza,"4738 Woodside Circle",850-868-3521,RonAPlaza@dayrep.com,3/30/1990
 4,Emma,Kwak,"4190 Tully Street",313-651-6614,EmmaAKwak@cuvox.de,3/12/1940
@@ -23,15 +23,8 @@
 23,Charles,Hansen,"2875 Euclid Avenue",805-303-4353,CharlesCHansen@dayrep.com,2/9/1999
 24,James,Glenn,"4870 Edgewood Road",901-259-9658,JamesMGlenn@teleworm.us,7/7/1990
 25,Cindy,Paul,"3156 Big Elm",816-840-3649,CindyJPaul@fleckens.hu,4/23/1994
-26,Mary,Hernandez,"945 Hickman Street",630-421-0480,MaryBHernandez@teleworm.us,6/14/1939
 27,Nancy,Villarreal,"4347 Todds Lane",210-465-6307,NancyNVillarreal@armyspy.com,9/21/1959
 28,Colby,Lincoln,"426 Bryan Street",336-284-1978,ColbyVLincoln@superrito.com,4/8/1996
 29,Robert,Retzlaff,"1858 Water Street",925-250-0317,RobertKRetzlaff@superrito.com,6/20/1951
 30,Donald,Schmidt,"1925 Mattson Street",503-431-9711,DonaldBSchmidt@rhyta.com,11/27/1952
-31,Mama,Patricia,23456,0255615538,mompat@gmail.com,27/11/19994
-32,Emmanuel,Lutterodt,P. O. Box 140,+233245243172,mancunaimoe@gmail.com,11/27/1952
-33,Emmanuel,Lutterodt,P. O. Box 140,+233245243172,emmanuel@gmail.com,11/27/1952
-34,George,Lutterodt,Pokuah Street,+233245243172,kojo@gmail.com,2022-07-09
-35,Osei,Lutterodt,Plot 13 Blk ix,+233245243172,osei@gmail.com,2022-07-09
-36,Mama,Patricia,23456,0257615538,momat@gmail.com,27/11/1994
 37,Mama,Patricia,23456,0254615538,momar@gmail.com,27/11/1994

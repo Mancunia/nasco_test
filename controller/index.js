@@ -48,8 +48,12 @@ const {toJson,readFile,writeFile} = require("../utils");
     }
 
     let {firstName,lastName,address,phone,email,date_of_birth} = req.body;
+    const jsonForm = toJson(data);
 
-    let record = `${data.length+1},${firstName},${lastName},${address},${phone},${email},${date_of_birth}`;
+    console.log(jsonForm)
+    console.log('new id:'+parseInt(jsonForm[jsonForm.length-1].id)+1)
+
+    let record = `${parseInt(jsonForm[jsonForm.length-1].id)+1},${firstName},${lastName},${address},${phone},${email},${date_of_birth}`;
 
     let dataJson= toJson(data);
 
